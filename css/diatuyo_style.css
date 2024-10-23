@@ -1,7 +1,7 @@
 body {
     font-family: "Poppins", sans-serif;
     background:  #0c0b0b;
-    overflow: hidden;
+  /*  overflow: hidden; */
     box-sizing: border-box;
 }
 
@@ -90,13 +90,18 @@ body {
     }
 }
 
-.frase-Dia{
+.span-texto-frase{
     text-align: justify;
+    margin-top: 1em;
+}
+
+.frase-Dia{
     font-size: 1.6em;
     color: rgb(224, 240, 255);
     text-shadow: 1px 1px 7px rgb(206, 218, 230);
     line-height: 1.2em;
     box-sizing: border-box;
+    max-width: 90%;
 }
 
 .container-hijos{
@@ -114,6 +119,10 @@ body {
     font-size: 2em;
 }
 
+.con_amor{
+    text-decoration: 2px underline;
+}
+
 .hidden{
     display: none;
 }
@@ -124,12 +133,20 @@ body {
     }
 
     .frase-Dia {
+        text-align: justify;
         font-size: 1.2em;
     }
 
     .texto.tituloFelizdia::before {
         border-left: 1px solid yellow; /* Reduce el tamaño de la barra en pantallas pequeñas */
     }
+
+    .frase-Dia.hijos{
+        font-size: 2em;
+        display: flex;
+        text-align: center;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -139,10 +156,18 @@ body {
     }
 
     .frase-Dia {
+        text-align: justify;
         font-size: 1em;
     }
 
     .texto.tituloFelizdia::before {
         border-left: 1px solid yellow;
     }
+
+    .frase-Dia.hijos{
+        font-size: 1.6em;
+        display: flex;
+        text-align: center;
+    }
+
 }

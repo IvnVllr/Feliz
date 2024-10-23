@@ -162,7 +162,7 @@ function verificarCombinaciones() {
 
             };
 
-            if (!combinacionCorrecta || totalIncorrectos > 0) {
+            if(!resultados.every(result => result === 'correct')) {
 
                 if (window.matchMedia("(max-width: 768px)").matches) {
                     // Cambiar a "row" si la combinación es correcta y la pantalla es pequeña
