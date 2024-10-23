@@ -125,7 +125,8 @@ function verificarCombinaciones() {
         { combo: ['raton', 'perro', 'gato'], resultados: ['incorrect', 'incorrect', 'correct'], texto: 'Casi lo logras, andá, hacelo de nuevo.', audio: audioDosIncorrectos, titulo: '¡Casi, intenta de nuevo!', icono: 'img/favicoins/serio/favicon.ico' },
         { combo: ['perro', 'gato', 'raton'], resultados: ['correct', 'incorrect', 'incorrect'], texto: 'Casi lo logras, andá, hacelo de nuevo.', audio: audioDosIncorrectos, titulo: '¡Casi, intenta de nuevo!', icono: 'img/favicoins/serio/favicon.ico' },
         { combo: ['gato', 'raton', 'perro'], resultados: ['incorrect', 'correct', 'incorrect'], texto: 'Casi lo logras, andá, hacelo de nuevo.', audio: audioDosIncorrectos, titulo: '¡Casi, intenta de nuevo!', icono: 'img/favicoins/serio/favicon.ico' },
-        { combo: ['gato', 'perro', 'raton'], resultados: ['incorrect', 'incorrect', 'incorrect'], texto: 'Hasta un caracol es más inteligente que vos, andá, hacelo de nuevo.', audio: audioTodosIncorrectos, titulo: '¡BURROOO 🫏!', icono: 'img/favicoins/riendose/favicon.ico'}
+        { combo: ['gato', 'perro', 'raton'], resultados: ['incorrect', 'incorrect', 'incorrect'], texto: 'Hasta un caracol es más inteligente que vos, andá, hacelo de nuevo.', audio: audioTodosIncorrectos, titulo: '¡BURROOO 🫏!', icono: 'img/favicoins/riendose/favicon.ico'},
+        { combo: ['raton', 'gato', 'perro'], resultados: ['incorrect', 'incorrect', 'incorrect'], texto: 'Hasta un caracol es más inteligente que vos, andá, hacelo de nuevo.', audio: audioTodosIncorrectos, titulo: '¡BURROOO 🫏!', icono: 'img/favicoins/riendose/favicon.ico'}
     ];
 
     let combinacionCorrecta = false;
