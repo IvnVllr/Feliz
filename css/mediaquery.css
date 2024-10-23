@@ -1,0 +1,154 @@
+@media (max-width: 768px) {
+
+    .container{
+        width: auto;
+    }
+
+    .inicio{
+        margin: 8em auto;
+    }
+
+    .titulo{
+        text-align: justify;
+    }
+
+    .text p{
+        font-size: 1.45em;
+        text-align: justify;
+    }
+
+    .inicio .botones{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fotos-figura{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.2em;
+    }
+
+    .fotos{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+    
+    img#raton.imagenes{
+        height: auto;
+        width: 8em;
+        transition: all 0.5s ease-in-out;
+    }
+
+    /*img#raton.imagenes:hover{
+        opacity: 1;
+        transform: scale(1.02);
+        border: 2px dashed rgba(232, 248, 5, 0.95);
+        box-shadow: 0 0 18px 0px rgba(232, 248, 5, 0.95);
+        transition: all 0.5s ease-in-out;
+    }*/
+
+    img#gato.imagenes{
+        height: auto;
+        width: 8em;
+        transition: all 0.5s ease-in-out;
+    }
+
+    /*img#gato:hover{
+        opacity: 1;
+        transform: scale(1.02);
+        border: 2px dashed rgba(232, 248, 5, 0.95);
+        box-shadow: 0 0 18px 0px rgba(232, 248, 5, 0.95);
+        transition: all 0.5s ease-in-out;
+    }*/
+
+    img#perro.imagenes{
+        height: auto;
+        width: 8em;
+        transition: all 0.5s ease-in-out;
+    }
+
+    /*img#perro.imagenes:hover{
+        opacity: 1;
+        transform: scale(1.02);
+        border: 2px dashed rgba(232, 248, 5, 0.95);
+        box-shadow: 0 0 18px 0px rgba(232, 248, 5, 0.95);
+        transition: all 0.5s ease-in-out;
+    }*/
+
+    .container-figura{
+        gap: 2em;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+
+    .figura{
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: 1em;
+    }
+
+    .figura .box{
+        width: 8em;
+        height: 8em;
+    }
+
+    .figura h2{
+        padding: 0.2em;
+    }
+
+    #contenedor-Divs-Fotos{
+        display: flex;
+    }
+
+    #botonFinal{
+        background: linear-gradient(45deg, rgb(189, 56, 241), rgb(0, 195, 255), rgb(142, 247, 5), rgb(189, 56, 241));
+        font-size: 0.9em;
+        padding: 2em 3em;
+        font-size: 0.9em;
+        padding: 2em 3em;
+        margin: 2em 0;
+        background-size: 300%;
+        animation: glowing 8s linear infinite;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    @keyframes glowing {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+
+    .flex-column{
+        display: flex;
+        flex-direction: column;
+    }
+
+    img.imagenes.seleccionada {
+        opacity: 1;
+        border: 2px dashed rgba(232, 248, 5, 0.95);
+        transform: scale(1.02);
+        box-shadow: 0 0 18px 0px rgba(232, 248, 5, 0.95); /* Borde para destacar */
+    }
+
+}

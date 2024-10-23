@@ -1,0 +1,148 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background:  #0c0b0b;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em;
+    margin: 2em auto;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2em;
+    box-sizing: border-box;
+}
+
+.contenedor_titulo {
+    overflow: hidden; /* Esto evitará que la animación desborde el contenedor */
+}
+
+.tituloDia{
+    font-size: 4em;
+    font-weight: 500;
+    padding: 0.2em;
+    background: linear-gradient(45deg, rgb(189, 56, 241), rgb(49,180,85), rgb(0, 195, 255), rgb(191,164,106), rgb(158, 5, 247));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300%;
+    width: 100%;
+    height: 100%;
+    animation: tituloAnimation 10s ease-in-out infinite;
+    filter: brightness(1);
+    box-sizing: border-box;
+}
+
+.texto{
+    display: flex;
+    position: relative;
+    text-align: center;
+    font-size: 3.8em;
+    font-weight: 500;
+    padding: 0.2em;
+    background: linear-gradient(45deg, rgb(189, 56, 241), rgb(49,180,85), rgb(0, 195, 255), rgb(191,164,106), rgb(158, 5, 247));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300%;
+    width: 100%;
+    height: 100%;
+    animation: tituloAnimation 10s ease-in-out infinite;
+    filter: brightness(1);
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.texto.tituloFelizdia::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0c0b0b;
+    border-left: 2px solid yellow;
+    animation: animate 4s steps(18)  infinite;
+    z-index: -1;
+    box-sizing: border-box;
+}
+
+@keyframes animate {
+    40%, 60%{
+        left: 100%;
+    }
+    100%{
+        left: 0;
+    }
+}
+
+@keyframes tituloAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.frase-Dia{
+    text-align: justify;
+    font-size: 1.6em;
+    color: rgb(224, 240, 255);
+    text-shadow: 1px 1px 7px rgb(206, 218, 230);
+    line-height: 1.2em;
+    box-sizing: border-box;
+}
+
+.container-hijos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    padding: 2em;
+    align-items: center;
+}
+
+.hijos{
+    font-family: "Rouge Script", cursive;
+    font-style: normal;
+    font-size: 2em;
+}
+
+.hidden{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .tituloDia, .tituloFelizdia {
+        font-size: 2.5em;
+    }
+
+    .frase-Dia {
+        font-size: 1.2em;
+    }
+
+    .texto.tituloFelizdia::before {
+        border-left: 1px solid yellow; /* Reduce el tamaño de la barra en pantallas pequeñas */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tituloDia, .tituloFelizdia {
+        font-size: 1.4em;
+        text-align: justify;
+    }
+
+    .frase-Dia {
+        font-size: 1em;
+    }
+
+    .texto.tituloFelizdia::before {
+        border-left: 1px solid yellow;
+    }
+}
